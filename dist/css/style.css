@@ -1,0 +1,67 @@
+h1,
+h2 {
+  text-align: center; }
+
+header {
+  margin: 5px auto;
+  max-width: 300px;
+  color: red;
+  background-color: lightblue;
+  height: 5rem;
+  box-shadow: 0px 1px 8px; }
+  header > h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 3rem; }
+
+div.main {
+  margin: auto;
+  max-width: 300px;
+  box-shadow: 0px 2px 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  column-gap: 0.5rem;
+  grid-template-areas: "input1 input2" "btn1 btn2" "btn3 btn4"; }
+  div.main > input {
+    margin: 10px auto;
+    background-color: #ddde87;
+    border-radius: 50%;
+    box-shadow: 0px 1px 5px;
+    color: #1f5f1f;
+    width: 6rem;
+    height: 3rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem; }
+
+input#firstNumber {
+  grid-area: input1; }
+
+input#secondNumber {
+  grid-area: input2; }
+
+button.btn1 {
+  grid-area: btn1; }
+
+button.btn2 {
+  grid-area: btn2; }
+
+button.btn3 {
+  grid-area: btn3; }
+
+button.btn4 {
+  grid-area: btn4; }
+
+button.btn1, button.btn2, button.btn3, button.btn4 {
+  margin: auto;
+  width: 6rem;
+  height: 6rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold; }
+  button.btn1 :active, button.btn2 :active, button.btn3 :active, button.btn4 :active {
+    color: blue;
+    font-size: 1.43rem;
+    box-shadow: 0px 1px 8px; }
